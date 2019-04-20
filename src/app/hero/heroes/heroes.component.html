@@ -1,0 +1,28 @@
+<div class='container-fluid'>
+  <div class='row'>
+    <div class='col-md-12' *ngFor='let hero of heroes'>
+
+
+      <mat-card class='heroDiv'>
+        <mat-card-content>
+          <pre>
+          <b> Name          :</b>{{hero.heroName}}
+          <b> Height        :</b>{{hero.heroHeight}}
+          <b> Type          :</b>{{hero.heroType}}
+          <b> Can Fly       :</b>{{hero.canFly}}
+          <b> Fan Following :</b>{{hero.fanFollowing}}
+          <b> Super Powers  :</b>{{hero.superPowers}}
+          <b> Fights Won    :</b>{{hero.fightsWon}}
+        </pre>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color='primary' id='edit' (click)='editHero(hero)'>Edit</button>&nbsp;&nbsp;
+          <button mat-raised-button color='warn' id='delete' (click)='deleteHero(hero)'>Delete</button>
+        </mat-card-actions>
+      </mat-card>
+
+
+
+    </div>
+  </div>
+</div>

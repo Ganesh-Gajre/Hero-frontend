@@ -1,0 +1,17 @@
+
+a{
+    font-size: 17px;
+    font-family: initial;
+    color: whitesmoke;
+    // margin: 26px;
+    float: left;
+    margin-left: 24px;
+    text-decoration: none;
+}
+.example-fill-remaining-space {
+  flex: 1 1;
+}
+
+mat-toolbar{
+  height: 60px;;
+}

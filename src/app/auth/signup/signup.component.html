@@ -1,0 +1,58 @@
+<!-- <div class='container'> -->
+<mat-card class='container'>
+  <h3>User Registration</h3><br>
+  <form [formGroup]=userForm (ngSubmit)='onSubmit()'>
+    <div class='form-group'>
+      <mat-form-field class='example-full-width'>
+        <input matInput formControlName='firstName' type='text' placeholder='First Name'>
+      </mat-form-field>
+    </div>
+
+    <div class='form-group'>
+      <mat-form-field class='example-full-width'>
+        <input matInput type='text' formControlName='lastName' placeholder='Last Name'>
+      </mat-form-field>
+    </div>
+
+    <div class='form-group'>
+      <label>Gender</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input formControlName='gender' type='radio' value='Male'> Male
+      <input formControlName='gender' type='radio' value='Female'> Female
+    </div>
+
+    <div class='form-group'>
+      <mat-form-field class='example-full-width'>
+        <input matInput type='email' formControlName='email' placeholder='Email'>
+      </mat-form-field>
+    </div>
+
+    <div class='form-group'>
+      <mat-form-field class='example-full-width'>
+        <input matInput type='text' formControlName='mobileNumber' placeholder='Mobile Number'>
+      </mat-form-field>
+    </div>
+
+    <div class='form-group'>
+      <mat-form-field class='example-full-width'>
+        <input matInput type='date' formControlName='dateOfBirth' placeholder='Date of Birth'>
+      </mat-form-field>
+    </div>
+
+    <div class='form-group'>
+      <mat-form-field class='example-full-width'>
+        <input matInput type='password' formControlName='password' placeholder='Password'>
+      </mat-form-field>
+    </div>
+
+    <div class='form-group'>
+      <mat-form-field class='example-full-width'>
+        <input matInput type='password' formControlName='confirmPassword' placeholder='Confirm Password'>
+      </mat-form-field>
+    </div>
+
+    <button mat-raised-button color='primary' type='submit' >Submit</button> &nbsp;
+    <button mat-raised-button color='warn' type='reset' >Clear</button>
+
+  </form>
+</mat-card>
+<!-- </div> -->

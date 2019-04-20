@@ -1,0 +1,52 @@
+<!-- <div class='container'> -->
+  <mat-card class='container'>
+    <h2>Heroes Registration Form</h2>
+    <form [formGroup]=heroesForm (ngSubmit)='onSubmit()'>
+      <div class='form-group'>
+        <mat-form-field class='example-full-width'>
+          <input matInput formControlName='heroName' type='text' placeholder='Hero Name'>
+        </mat-form-field>
+      </div>
+
+      <div class='form-group'>
+        <mat-form-field class='example-full-width'>
+          <input matInput formControlName='heroHeight' type='number' placeholder='Hero Height'>
+        </mat-form-field>
+      </div>
+
+      <div class='form-group' style='word-spacing: 5px;'>
+        <label>Hero Type</label>&nbsp;&nbsp;&nbsp;
+        <input formControlName='heroType' type='radio' value='Male'> Male
+        <input formControlName='heroType' type='radio' value='Female'> Female
+      </div>
+
+      <div class='form-group' style='word-spacing: 5px;'>
+        <label>Can Fly ?</label>&nbsp;&nbsp;&nbsp;
+        <input formControlName='canFly' type='radio' value='True'> True
+        <input formControlName='canFly' type='radio' value='False'> False
+      </div>
+
+      <div class='form-group'>
+        <mat-form-field class='example-full-width'>
+          <input matInput formControlName='superPowers' type='text' placeholder='Super Powers'>
+        </mat-form-field>
+      </div>
+
+      <div class='form-group'>
+        <mat-form-field class='example-full-width'>
+          <input matInput formControlName='fanFollowing' type='number' placeholder='Fan Following'>
+        </mat-form-field>
+      </div>
+
+      <div class='form-group'>
+        <mat-form-field class='example-full-width'>
+          <input matInput formControlName='fightsWon' type='number' placeholder='Fight Won'>
+        </mat-form-field>
+      </div>
+
+      <button mat-raised-button color='primary' id='submit' type='submit'>Submit</button> &nbsp;
+      <button mat-raised-button color='warn' id='clear' type='reset'>Clear</button>
+
+    </form>
+  </mat-card>
+<!-- </div> -->
